@@ -1,73 +1,134 @@
-# React + TypeScript + Vite
+# 🧠 Smart Dev Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, feature-rich calculator built with **React + TypeScript + Tailwind CSS**.
+Designed not just for basic calculations, but as a **developer-focused tool** with enhanced usability and UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+> (Add your Vercel/Netlify link here)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+> (Add screenshots here)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ✨ Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- ➕ Basic arithmetic operations (+ − × ÷)
+- ⌨️ Full keyboard support
+- 🧾 Calculation history _(coming soon / optional if not yet done)_
+- 🌙 Dark mode toggle (saved in localStorage)
+- 🎨 Modern UI with Tailwind CSS
+- ⚡ Fast and responsive design
+- 🧠 Smart expression handling
+- ❌ Error handling for invalid inputs
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **React Router**
+- **Font Awesome**
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── components/
+ │    ├── Calculator.tsx
+ │    ├── Display.tsx
+ │    ├── Button.tsx
+ │
+ ├── hooks/
+ │    ├── useCalculator.ts
+ │    ├── useTheme.ts
+ │
+ ├── pages/
+ │    ├── HomePage.tsx
+ │
+ ├── App.tsx
+ ├── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the repository:
+
 ```
+git clone https://github.com/your-username/smart-dev-calculator.git
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Run the development server:
+
+```
+npm run dev
+```
+
+---
+
+## 🧠 How It Works
+
+The calculator evaluates expressions dynamically using JavaScript functions:
+
+```
+Function('return ' + expression)()
+```
+
+This allows flexible input such as:
+
+```
+(2 + 3) * 5 / 2
+```
+
+---
+
+## 🌙 Dark Mode
+
+- Toggle between light and dark themes
+- Theme is saved using **localStorage**
+- Implemented using Tailwind's `dark` class
+
+---
+
+## 🔮 Future Improvements
+
+- 📊 Graph mode (visualize equations)
+- 🧾 Persistent history panel
+- 🧠 Step-by-step solution (Dev Mode)
+- 🎨 Multiple themes (neon, minimal, etc.)
+- 📱 PWA support
+
+---
+
+## 🙌 Author
+
+**Your Name**
+
+- GitHub: https://github.com/your-username
+- Portfolio: (optional)
+
+---
+
+## ⭐ Support
+
+If you like this project, feel free to **star ⭐ the repo**!
+
+---
